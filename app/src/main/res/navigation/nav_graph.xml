@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.whatspopin.fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_popDetailFragment"
+            app:destination="@id/popDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popDetailFragment"
+        android:name="com.example.whatspopin.fragments.PopDetailFragment"
+        android:label="PopDetailFragment" />
+</navigation>
